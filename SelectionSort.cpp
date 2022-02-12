@@ -34,13 +34,11 @@ void SelectionSort(int arr[], size_t n)
     int tmpN = 0;
     for (size_t i = 0; i < n - 1; i++)
     {
-        int minV = arr[i];
         size_t minI = i;
         for (size_t j = i + 1; j < n; ++j)
         {
-            if (arr[j] < minV)
+            if (arr[j] < arr[minI])
             {
-                minV = arr[j];
                 minI = j;
             }
             ++tmpN;
