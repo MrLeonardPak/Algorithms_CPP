@@ -6,6 +6,7 @@ void BubbleSort(int arr[], int n);
 
 int main()
 {
+    srand(time(NULL) / 3600);
     const size_t n = 10;
     int a[n];
     
